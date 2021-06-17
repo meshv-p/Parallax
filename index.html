@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax demo</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+        }
+        .first{
+            border:.1px solid white;
+            height: 99vh;
+            /* background: no-repeat fixed url(https://source.unsplash.com/random); */
+            background-image: url(https://source.unsplash.com/random);
+            opacity: .8;
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position:center;
+            background-attachment: fixed;
+        }
+        p{
+            text-align: center;
+            display: grid; z-index: 5;
+            margin: 298px auto; font-size: 32px; background: #ffffff7d;
+        }
+        .dis{
+            border: .1px solid red;
+            height: 10vh;
+            text-align: center;
+            font-size: 25px;
+            background: #ffffff4f;
+            opacity: 0.9;
+            /* margin-top: 10px; */
+            line-height: 55px;
+        }
+        .sec{
+            border: .1px ridge red;
+            height: 97vh;
+            /* background: no-repeat fixed url(https://source.unsplash.com/random); */
+            background-image: url(https://www.w3schools.com/howto/img_parallax.jpg);
+            opacity: .8;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover; 
+            image-resolution: 100%;
+        }
+        .third{
+            border: .1px ridge red;
+            height: 97vh;
+            /* background: no-repeat fixed url(https://source.unsplash.com/random); */
+            background-image: url(https://source.unsplash.com/user/erondu);
+            opacity: .8;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover; 
+            image-resolution: 100%;
+        }
+        .for{
+            border: .1px ridge red;
+            height: 97vh;
+            /* background: no-repeat fixed url(https://source.unsplash.com/random); */
+            background-image: url(https://source.unsplash.com/weekly?water);
+            opacity: .8;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover; 
+            image-resolution: 100%;
+        }
+        @media (max-width:500px){   
+            *{
+                border-radius: 8px;
+            }
+            p{
+                margin: 209px auto;
+            }
+            .dis{
+                font-size: 16px;
+                line-height: 41px;
+                padding: 15px; height: 22vh;
+                border-radius: 8px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+            <div class="first">
+                    <p>Parallax Demo</p>
+            </div>
+            <div class="dis">
+                This is parallex demo. In this, If You scroll up, so text goes up, though pic will remain same as their place.
+            </div>
+            <div class="sec">
+                    <p>Meshv Patel</p>
+            </div>
+            <div class="third" >
+                <p style="letter-spacing: 10px;">SCROLL UP</p>
+            </div>
+            <div class="for">
+                <p style="letter-spacing: 10px;">Done</p>
+            </div>
+</body>
+</html>
